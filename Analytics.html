@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/Analytics.css" />
+    <title>CA</title>
+  </head>
+  <body>
+    <nav class="navbarContainer">
+        <div class="logo">
+          <img src="./img/Logo.png" alt="cricketLogo" />
+          <h1>Cricket Academy</h1>
+        </div>
+        <div class="links">
+          <div class="link"><a href="./index.html">Home</a></div>
+          <div class="link"><a href="./Teams.html">Facilities</a></div>
+          <div class="link"><a href="./Analytics.html">Registration</a></div>
+          <div class="link"><a href="./AboutUs.html">About Us</a></div>
+         
+        </div>
+      </nav>
+    <section class="analyticsSection">
+      <div class="section"> 
+        <div class="analytics">
+          <h1>Student Registaration Form</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-10">
+                    <label for="fname">First Name:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="lname">Last Name:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="col-90">
+                    <input type="email" id="email" name="email" placeholder="it should contain @,.">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="mobile">Mobile:</label>
+                </div>
+                <div class="col-90">
+                    <input type="tel" id="mobile" name="mobile" placeholder="only 10 digits are allowed">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="gender" required>Gender:</label>
+                </div>
+                <div class="col-90">
+                    <input type="radio" id="male" name="gender" value="male"/>Male
+                    <input type="radio" id="female" name="gender" value="female"/>Female
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="dob">Date Of Birth:</label>
+                </div>
+                <div class="col-90">
+                    <input type="Date" id="dob" name="dob">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="address">Address:</label>
+                </div>
+                <div class="col-90">
+                    <textarea name="address" id="address" cols="30" rows="2"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="city">City:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="city" name="city" maxlength="10">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="pincode">ZIP Code:</label>
+                </div>
+                <div class="col-90">
+                    <input type="number" id="pin" name="pin" maxlength="6">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="state">State:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="state" name="state">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="qualification" required >Facility/Coaching:</label>
+                </div>
+                <div class="col-90">
+                    <select name="Facility/Coaching" id="qualification">
+                        <option value=" ">Select a Facility/Coaching</option>
+                        <option value="Batting">Batting</option>
+                        <option value="Bowling">Bowling</option>
+                        <option value="Fielding">Fielding</option>
+                        <option value="Personal Coaching">Personal Coaching</option>
+                        <option value="Camps">Camps</option>
+                        <option value="Bowling machine">Bowling machine</option>
+                        <option value="Turf Wickets">Turf Wickets</option>
+                        <option value="Cricket Grounds">Cricket Grounds</option>
+                        <option value="Flood Light">Flood Light</option>
+                        <option value="Nets">Nets</option>
+                        <option value="Video Analysis">Video Analysis</option>
+                        
+                    </select>
+                </div>
+            </div>
+   
+            <div class="row">
+                <input type="button" value="Register" onclick="SaveStudentDetails()">
+            </div>  
+        </div>  
+          </div>
+      </div>
+    </section>
+  </body>
+</html>

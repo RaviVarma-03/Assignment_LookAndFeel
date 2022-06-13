@@ -1,0 +1,95 @@
+/* Navbar Css starts */
+.navbarContainer{
+    background-color: #1F4690;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+}
+
+.logo{
+    color: white;
+    padding-left: 5%;
+    display: flex;
+}
+
+.logo img{
+    width: 14%;
+}
+
+.links{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.link{
+    border-radius:5px;
+    padding: 1%;
+    
+}
+
+.signIn{
+    border-radius:5px;
+    padding: 1.5%;
+    background-color: #3A5BA0;     
+}
+
+.signIn a{
+    text-decoration: none;
+    color: white;
+}
+.link:hover{
+    background-color: #3A5BA0;  
+    transform: scale(1.25);
+}
+
+.link a{
+    color:white;
+    text-decoration: none;
+}
+
+/* Navbar Css ends */
+.detailsContainer{
+    text-align:center;
+    margin-bottom: 2%;
+    /* padding-bottom: 2%; */
+}
+
+.teamsContainer{
+    text-align: center;
+    align-items: center;
+    background-color: #ADD8E6;
+    padding: 1%;
+}
+
+table, th, td {
+    text-align: center;
+    border: 1px solid black;
+    
+  }
+
+  .teamsContainer table{
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin:auto ;
+  }
+  
+@media screen and (max-width: 768px)  {
+    .navbarContainer{
+        flex-direction: column;
+    }
+    .links{
+        width: 100%;
+        padding-bottom: 1%;
+    }
+    .logo{
+        padding-left: 0%;
+        height: 1%;
+        font-size: small;
+    }
+    
+}
+

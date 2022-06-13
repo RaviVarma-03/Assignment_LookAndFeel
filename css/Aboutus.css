@@ -1,0 +1,117 @@
+/* Navbar Css starts */
+.navbarContainer{
+    background-color: #1F4690;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+}
+
+.logo{
+    color: white;
+    padding-left: 5%;
+    display: flex;
+}
+
+.logo img{
+    width: 14%;
+}
+
+.links{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.link{
+    border-radius:5px;
+    padding: 1%;
+    
+}
+
+.signIn{
+    border-radius:5px;
+    padding: 1.5%;
+    background-color: #3A5BA0;     
+}
+
+.signIn a{
+    text-decoration: none;
+    color: white;
+}
+.link:hover{
+    background-color: #3A5BA0;  
+    transform: scale(1.25);
+}
+
+.link a{
+    color:white;
+    text-decoration: none;
+}
+
+/* Navbar Css ends */
+
+
+/* Navbar Css ends */
+
+
+.header{
+    text-align: center;
+}
+
+.aboutItemContainer{
+    width: 100%;
+    text-align: center;
+    
+}
+.aboutItems{
+    margin: auto;
+    margin-top: 2%;
+    align-items: center;
+    width: 70%;
+    height: 20%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #ADD8E6;
+}
+
+.aboutItems{
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutItems img{
+    padding: 2%;
+    height: 100%;
+    width: 100%;
+    max-height: 200px;
+    max-width: 200px;
+    border-radius: 20%;
+}
+.aboutItems .name{
+    margin: auto;
+    padding: 2%;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px)  {
+    .navbarContainer{
+        flex-direction: column;
+    }
+    .links{
+        width: 100%;
+        padding-bottom: 1%;
+    }
+    .logo{
+        padding-left: 0%;
+        height: 1%;
+        font-size: small;
+    }
+    .aboutItems{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+}
